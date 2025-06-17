@@ -1,0 +1,13 @@
+Custom License – Patent Pending
+
+All rights reserved.
+© 2025 タロウ
+
+This software and its associated concepts are disclosed for the purpose of academic and technical transparency only.
+
+Commercial use, redistribution, or derivative works are not permitted without explicit written permission from the author.
+
+This project is currently under active patent consideration.
+Any unauthorized use, reproduction, or implementation of any part of this concept may constitute infringement of pending intellectual property rights.
+
+Contact: [Your Contact Information or GitHub/X account]
