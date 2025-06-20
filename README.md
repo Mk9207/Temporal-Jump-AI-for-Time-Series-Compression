@@ -1,12 +1,40 @@
-# Temporal Jump AI for Time Series Compression
+# 時系列圧縮のための Temporal Jump AI  
+*Temporal Jump AI for Constructive Time-Series Compression*
 
-**日本語概要**: 構成的な時空跳躍点を用いて時系列データを圧縮するAIアーキテクチャです。
+## 概要  
+本プロジェクトは、構成的に定義された「時空ジャンプポイント（Temporal Jump Points）」を用いて、  
+高効率かつ知的に時系列データを圧縮するAIアーキテクチャを提案します。  
+従来の連続圧縮とは異なり、意味的な時空遷移点の抽出によりデータを階層的・非線形に再構成する圧縮方式です。
 
-**English Overview**: An AI model that compresses time series data using constructively defined temporal jump points.
+## 背景  
+時系列データ（センサーデータ、株価、ユーザー行動ログなど）は通常、時間軸に沿った連続データとして扱われますが、  
+情報の核心は一部の変化点（ジャンプ点）に集約されていることが多いです。  
+本モデルでは、この構成的ジャンプ点をAIが動的に選定し、重要性に応じて時系列を再分解・再構築します。
 
-## Topics
-- ai-compression
-- time-series
-- constructive-ai
-- temporal-jump
-- data-efficiency
+## 想定読者
+- 時系列データの圧縮・分析に関わる研究者・技術者  
+- IoT、金融、ヘルスケア領域のデータ処理に関心のある開発者  
+- 非線形圧縮アルゴリズムに興味のある構成的思考ユーザー  
+
+## 応用例
+- IoTセンサーの通信帯域削減  
+- 株価・取引データの要約圧縮  
+- 医療データ（脈拍・EEGなど）の軽量アーカイブ  
+- 動的イベントトリガーの自動抽出によるAI学習用データ整備  
+
+## トピック
+- 時系列解析  
+- 構成的圧縮アルゴリズム  
+- Temporal Jump理論  
+- AIによる時系列モデリング  
+- 意味ベース非線形圧縮  
+
+## ファイル構成
+- `README.md`: 本ドキュメント  
+- `LICENSE`: ライセンス情報  
+- `特許草案.txt`: 本技術に関する特許構想  
+- `フローチャート.png`: Temporal Jumpアルゴリズムの概略図  
+
+---
+
+今後、実際の圧縮効果評価スクリプト・ベンチマークデータとの比較結果などを追加していく予定です。
