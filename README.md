@@ -1,40 +1,75 @@
-# 時系列圧縮のための Temporal Jump AI  
-*Temporal Jump AI for Constructive Time-Series Compression*
+Temporal Jump AI for Time-Series Compression
 
-## 概要  
-本プロジェクトは、構成的に定義された「時空ジャンプポイント（Temporal Jump Points）」を用いて、  
-高効率かつ知的に時系列データを圧縮するAIアーキテクチャを提案します。  
-従来の連続圧縮とは異なり、意味的な時空遷移点の抽出によりデータを階層的・非線形に再構成する圧縮方式です。
+時系列圧縮のための Temporal Jump AI
 
-## 背景  
-時系列データ（センサーデータ、株価、ユーザー行動ログなど）は通常、時間軸に沿った連続データとして扱われますが、  
-情報の核心は一部の変化点（ジャンプ点）に集約されていることが多いです。  
-本モデルでは、この構成的ジャンプ点をAIが動的に選定し、重要性に応じて時系列を再分解・再構築します。
+This repository introduces an AI-based framework for compressing time-series data by detecting and leveraging Temporal Jump Points—high-value segments inferred from dynamic transitions.
+本リポジトリでは、動的遷移から導出される**時空ジャンプポイント（Temporal Jump Points）**を活用することで、高密度かつ意味を保持した時系列圧縮を実現するAIアーキテクチャを提案します。
 
-## 想定読者
-- 時系列データの圧縮・分析に関わる研究者・技術者  
-- IoT、金融、ヘルスケア領域のデータ処理に関心のある開発者  
-- 非線形圧縮アルゴリズムに興味のある構成的思考ユーザー  
+The framework is optimized for efficient storage, pattern preservation, and anomaly detection in diverse applications such as IoT, healthcare, and user behavior analytics.
+このアーキテクチャは、IoT・医療・行動分析など多様な分野において、効率的な保存・パターン保持・異常検出に適応可能です。
 
-## 応用例
-- IoTセンサーの通信帯域削減  
-- 株価・取引データの要約圧縮  
-- 医療データ（脈拍・EEGなど）の軽量アーカイブ  
-- 動的イベントトリガーの自動抽出によるAI学習用データ整備  
-
-## トピック
-- 時系列解析  
-- 構成的圧縮アルゴリズム  
-- Temporal Jump理論  
-- AIによる時系列モデリング  
-- 意味ベース非線形圧縮  
-
-## ファイル構成
-- `README.md`: 本ドキュメント  
-- `LICENSE`: ライセンス情報  
-- `特許草案.txt`: 本技術に関する特許構想  
-- `フローチャート.png`: Temporal Jumpアルゴリズムの概略図  
 
 ---
 
-今後、実際の圧縮効果評価スクリプト・ベンチマークデータとの比較結果などを追加していく予定です。
+🔍 Background / 背景
+
+Traditional time-series compression often neglects the semantic and structural significance of dynamic events or transitions.
+従来の時系列圧縮は、動的変化や意味的転換点の重要性を軽視しがちです。
+
+This model identifies critical jump transitions and retains compressed representations aligned with time-domain semantics.
+本モデルは、重要なジャンプ遷移点を特定し、時間軸の意味構造と一致する圧縮表現を維持します。
+
+
+---
+
+🧠 Intended Audience / 想定読者
+
+Researchers and engineers working on time-series compression and analytics
+　時系列圧縮・分析に携わる研究者・技術者
+
+IoT, wearable, or healthcare data system developers
+　IoT・ウェアラブル・医療系データシステム開発者
+
+Users interested in interpretable AI for dynamic signal analysis
+　動的信号に対する解釈可能AIに関心のある利用者
+
+
+
+---
+
+🛠 Applications / 応用例
+
+▸ For specialists（専門向け）
+
+Real-time compression of IoT sensor streams
+　IoTセンサストリームのリアルタイム圧縮
+
+Compact archiving of multi-modal clinical data (e.g., EEG + ECG)
+　**多モーダル医療データ（EEG＋心電）**の軽量アーカイブ
+
+Jump-based event compression for AI training
+　AI学習向けイベントベース圧縮データ生成
+
+
+▸ For general users（日常応用）
+
+Activity tracking compression in fitness apps
+　フィットネスアプリでの活動履歴圧縮
+
+User behavior summarization in smart homes
+　スマートホームでの行動要約と圧縮保存
+
+Reduced sync load in wearable devices
+　ウェアラブル機器におけるデータ同期の軽量化
+
+
+
+---
+
+🧩 File Structure / ファイル構成
+
+root/
+├── README.md              # 本ドキュメント
+├── LICENSE                # ライセンス (Apache 2.0)
+├── 特許要旨.txt            # 特許構成案・要点まとめ
+└── フローチャート.png      # Temporal Jump アルゴリズム構造図
